@@ -1,5 +1,12 @@
 // Find the maximum
-
+function maxOfTwoNumbers (a,b){
+  if(a>b){
+    return a
+  }else{
+    return b
+  }
+}
+//erm es la manera 
 // Finding Longest Word
 var words = [
   'mystery',
@@ -14,6 +21,12 @@ var words = [
 // Calculating a Sum
 
 var numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+function sumArray(numbers) {
+
+  return numbers.reduce(function(a,b) {
+    return a + b
+  },0);
+}
 
 // Calculate the Average
 
@@ -32,6 +45,29 @@ var wordsArr = [
   'fuel',
   'palace'
 ];
+//cree funcion para el promedio que recive el arregle wordsArr
+function averageWordLength (wordsArr){
+// cre una vriable que es tamaño de wordArrs
+  var totaldelar = wordsArr.length
+  //totla de las suma de las palabras comienza en 0
+  var totalp= 0
+  //
+if(totaldelar===0){
+
+  return undefined
+}else{
+  ///
+  wordsArr.forEach(function(word){
+    //
+    totalp= word.length + totalp
+
+  })
+  //
+  var promedio= totalp/totaldelar
+ // regreso el promedio 
+  return promedio
+}
+}
 
 // Unique Arrays
 var wordsUnique = [
@@ -47,6 +83,13 @@ var wordsUnique = [
   'simple',
   'bring'
 ];
+
+
+
+Let's create a simple array search.
+
+/*Write a function doesWordExist that will take in an array of words as one argument, and a word to search for as the other. 
+Return true if it exists, otherwise, return false. Don't use indexOf for this one. :)*/
 
 // Finding Elements
 var wordsFind = [

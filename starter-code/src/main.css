@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #00d8b7;
+
+}
+
+body{
+    background-color: #edeaee
+}
+
+.header{
+    border: 2px solid palegreen;
+    background-color: #79f279
+}
+
+header{
+    color: white;
+    
+}
